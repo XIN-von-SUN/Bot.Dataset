@@ -1,2 +1,0 @@
-model_checkpoint_path: "/Users/xinsun/Dev_env/rasa_bot/models/nlu/current/component_6_EmbeddingIntentClassifier.ckpt"
-all_model_checkpoint_paths: "/Users/xinsun/Dev_env/rasa_bot/models/nlu/current/component_6_EmbeddingIntentClassifier.ckpt"

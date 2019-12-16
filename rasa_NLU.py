@@ -7,7 +7,7 @@ from rasa.nlu.training_data import load_data
 from rasa.nlu.config import RasaNLUModelConfig
 from rasa.nlu.model import Trainer, Interpreter
 from rasa.nlu import config
-from rasa_nlu.test import run_evaluation
+from rasa.nlu.test import run_evaluation
 
 
 class rasa_NLU:
@@ -67,15 +67,15 @@ if __name__=='__main__':
     test_query = 'Hello, how are you!'
     train_loop = False
 
-    rasa_NLU = rasa_NLU(train_loop, model_directory, model_name, train_data_path, test_data_path)
+    rasa_nlu = rasa_NLU(train_loop, model_directory, model_name, train_data_path, test_data_path)
     
     while rasa_NLU.train_loop:
         print("Start training......")
-        rasa_NLU.NLU_train()
+        rasa_nlu.NLU_train()
     
-    rasa_NLU.NLU_test(test_query)
+    rasa_nlu.NLU_test(test_query)
 
-    rasa_NLU.NLU_evaluation()
+    rasa_nlu.NLU_evaluation()
 
 
 
