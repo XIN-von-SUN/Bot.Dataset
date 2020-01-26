@@ -3,16 +3,14 @@ import numpy as np
 import string, re
 import spacy
 import random
+import networkx as nx
+from rake_nltk import Rake
 
 
 class rasa_data:
 
-    def __init__(self, data_file, dim_1, dim_2, dim_3, dim_4):
+    def __init__(self, data_file):
         self.data_file = data_file
-        self.dim_1 = dim_1
-        self.dim_2 = dim_2
-        self.dim_3 = dim_3
-        self.dim_4 = dim_4
 
 
 
@@ -22,6 +20,10 @@ class rasa_data:
 
 
     def rasa_data_process(self, df, write_file):
+        '''
+        Transfer the data to the rasa training data format.
+        '''
+
         '''
         # read_file = '/users/xinsun/Downloads/oos-eval-master/data/data_full.json'
         df = pd.read_json(self.data_file, typ='series')
@@ -61,7 +63,7 @@ class rasa_data:
                 f.write(str(i))  
         '''
 
-        df['Phrase'] = '- ' + df.Phrase + '.\n'
+        df['Phrase'] = '- ' + df.Phrase + '\n'
         intents = list(df.Intent.unique())
 
         data = []
@@ -78,18 +80,50 @@ class rasa_data:
 
 
 
-    def rasa_sub_dataset(self, write_file, dim2_length, dim3_reduce, dim4_grammar):
+
+    def rasa_sub_dataset(self, write_file, dim1_stop, dim2_length, dim3_reduce, dim4_grammar, dim5_sdp, dim6_keywords):
         #data_file = '/users/xinsun/Downloads/oos-eval-master/data/data_full.json'
         df = pd.read_json(self.data_file, typ='series')
         df_train = pd.DataFrame(df['train'], columns=['Phrase', 'Intent'])
 
-        if self.dim_1:
+
+        '''whether delete punctuation or stop words.'''
+        if bool(dim1_stop): 
+            '''
             text = df_train.Phrase.values
             regex = re.compile('[%s]' % re.escape(string.punctuation))
             token_no_punctuation = [regex.sub('', i) for i in text]
             df_train['Phrase'] = token_no_punctuation
+            '''
+            
+            STOP_WORDS = ['the', 'please', 'would', 'much', 'to', 'that', 'me', "'d", "'ll", "'m", "'re", "'s", "'ve", 'a', 'an']
 
-        if self.dim_2:
+            text = df_train.Phrase.values
+            regex = re.compile('[%s]' % re.escape(string.punctuation))
+            text_no_punctuation = [regex.sub('', i) for i in text]
+
+            nlp = spacy.load('en')
+            phrase_tokens = nlp.pipe(text_no_punctuation, batch_size=10000)
+            token_no_punctuation = []
+            for phrase in phrase_tokens: token_no_punctuation.append(phrase)
+
+            token_no_punctuation_stopwords = [[token for token in doc if str(token) not in STOP_WORDS] for doc in token_no_punctuation]
+
+            text_no_punctuation_stopwords = []
+            for text in token_no_punctuation_stopwords:
+                phrase = str()
+                for i in text:
+                    phrase += (str(i) + ' ')
+                text_no_punctuation_stopwords.append(phrase.strip())
+
+            regex = re.compile('[%s]' % re.escape(string.punctuation))
+            text_no_punctuation_stopwords = [regex.sub('', i) for i in text_no_punctuation_stopwords]
+
+            df_train['Phrase'] = text_no_punctuation_stopwords
+
+
+        '''control the length of training sentences.'''
+        if bool(dim2_length):
             nlp = spacy.load('en')
             phrases = df_train['Phrase']
             tokens = nlp.pipe(phrases, batch_size=10000)
@@ -102,7 +136,9 @@ class rasa_data:
 
             df_train['Phrase'] = df_train_length
 
-        if self.dim_3:
+
+        '''control the number of training sentences for each intents.'''
+        if bool(dim3_reduce):
             idx_range= [(i*100, i*100+99) for i in range(150)]
             idx = []
             for i in range(150):
@@ -117,7 +153,9 @@ class rasa_data:
             df_train.loc[index, 'Phrase'] = df_train.loc[index, 'Phrase_copy']
             df_train = df_train.drop(columns=['Phrase_copy'])
 
-        if self.dim_4:
+
+        '''choose different patterns of training sentences.'''
+        if bool(dim4_grammar):
             df_train = df_train[df_train.Phrase.isnull()==False].reset_index(drop=True)
             nlp = spacy.load('en')
             phrases = df_train['Phrase']
@@ -138,17 +176,97 @@ class rasa_data:
             if dim4_grammar == 'question': df_train['Phrase'] = df_train['Phrase_question']
             else: df_train['Phrase'] = df_train['Phrase_statement']
 
+        
+        '''using shortest dependency path of training phrases.'''
+        if bool(dim5_sdp):
+            df_train = df_train[df_train.Phrase.isnull()==False].reset_index(drop=True)
+            
+            text = df_train.Phrase.values
+            nlp = spacy.load('en')
+            phrase_tokens = nlp.pipe(text, batch_size=10000)
+
+            phrase_SDPs = []
+            error_phrase = []
+            for idx, phrase in enumerate(phrase_tokens):
+                try:
+                    edges = []
+                    for token in phrase:
+                        for child in token.children:
+                            edges.append(('{0}'.format(token.lower_),
+                                        '{0}'.format(child.lower_))) 
+
+                    words_set= []
+                    for i in edges:
+                        words_set.append(i[0])
+                        words_set.append(i[1])
+                    words_set = set(words_set)
+
+                    for start in range(0,len(phrase),1):
+                        if str(phrase[start]) in words_set:
+                            #print(start)
+                            entity1 = str(phrase[start]).lower()
+                            break
+
+                    for end in range(len(phrase)-1,-1,-1):
+                        if str(phrase[end]) in words_set:
+                            #print(end)
+                            entity2 = str(phrase[end]).lower()
+                            break
+
+                    graph = nx.Graph(edges)
+                    # Get the SDP.
+                    token_SDP = nx.shortest_path(graph, source=entity1, target=entity2)
+
+                    SDP = ''
+                    for i in token_SDP: SDP+= (i+' ')
+                    phrase_SDPs.append(SDP.strip())
+                except:
+                    error_phrase.append(idx)
+                    pass 
+                
+                continue
+
+            df_train = df_train.drop(index=error_phrase).reset_index(drop=True)
+
+            df_train['Phrase'] = phrase_SDPs
+
+        
+        '''just using keywords of each training phrases.'''
+        if bool(dim6_keywords):
+
+            df_train = df_train[df_train.Phrase.isnull()==False].reset_index(drop=True)
+            
+            phrases = df_train.Phrase.values
+
+            r = Rake() # Uses stopwords for english from NLTK, and all puntuation characters.
+
+            token_keywords = []
+            for phrase in phrases:
+                r.extract_keywords_from_text(phrase)
+                token_keywords.append(r.get_ranked_phrases())
+
+            phrase_keywords = []
+            for tokens in token_keywords:
+                sent = ''
+                for token in tokens:
+                    sent += (token + ' ')
+                phrase_keywords.append(sent.strip())
+
+            df_train['Phrase'] = phrase_keywords
+                    
+
         df_final = df_train[df_train.Phrase.isnull()==False].reset_index(drop=True)
         #print(df_final)
-        
+        print('len of final df:', len(df_final))
+
         self.rasa_data_process(df_final[['Phrase', 'Intent']], write_file) 
 
 
 
-def rasa_data_loop(data_file, write_file, dimensions, properties):
+def rasa_data_loop(data_file, write_file, dimensions):
 
-    rasa_dataset = rasa_data(data_file, dimensions[0], dimensions[1], dimensions[2], dimensions[3])
-    rasa_dataset.rasa_sub_dataset(write_file, properties[0], properties[1], properties[2])
+    rasa_dataset = rasa_data(data_file)
+    rasa_dataset.rasa_sub_dataset(write_file, dimensions[0], dimensions[1], dimensions[2], dimensions[3], dimensions[4], dimensions[5])
 
 
 
@@ -158,13 +276,13 @@ if __name__=='__main__':
     data_file = '/users/xinsun/Downloads/oos-eval-master/data/data_full.json'
     write_file = '/users/xinsun/Desktop/'    #Downloads/oos-eval-master/data/data_full.json'
     
-    dimensions = [[True,True,True,True], [True,True,True,False], [True,True,False,True], [True,True,False,False], 
+    '''dimensions = [[True,True,True,True], [True,True,True,False], [True,True,False,True], [True,True,False,False], 
                     [True,False,True,True], [True,False,True,False], [True,False,False,True], [True,False,False,False],
                     [False,True,True,True], [False,True,True,False], [False,True,False,True], [False,True,False,False],
                     [False,False,True,True], [False,False,True,False], [False,False,False,True], [False,False,False,False]] 
-                    # dim_1, dim_2, dim_3, dim_4
+                    # dim_1, dim_2, dim_3, dim_4'''
 
-    properties = [[5, 20, 'question'], [5, 20, 'statement'], [5, 50, 'question'], [5, 50, 'statement'], [5, 100, 'question'], [5, 100, 'statement'], 
+    dimensions = [[5, 20, 'question'], [5, 20, 'statement'], [5, 50, 'question'], [5, 50, 'statement'], [5, 100, 'question'], [5, 100, 'statement'], 
                     [10, 20, 'question'], [10, 20, 'statement'], [10, 50, 'question'], [10, 50, 'statement'], [10, 100, 'question'], [10, 100, 'statement'],
                     [15, 20, 'question'], [15, 20, 'statement'], [15, 50, 'question'], [15, 50, 'statement'], [15, 100, 'question'], [15, 100, 'statement']]
     # dim2_length, dim3_reduce, dim4_grammar
