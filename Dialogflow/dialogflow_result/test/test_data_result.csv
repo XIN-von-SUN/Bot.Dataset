@@ -1,0 +1,1001 @@
+,Phrase,Intent,Pred_intent
+0,how would you say fly in italian,translate,translate
+1,what's the spanish word for pasta,translate,translate
+2,how would they say butter in zambia,translate,ingredient_substitution
+3,how do you say fast in spanish,translate,translate
+4,what's the word for trees in norway,translate,spelling
+5,how does one say wonderful in german,translate,translate
+6,how do they say tacos in mexico,translate,nutrition_info
+7,how would one say cruiser in china,translate,translate
+8,what's the french word you use for potato,translate,change_language
+9,what would the word for grass be in finland,translate,spelling
+10,how do you say please in french,translate,translate
+11,how would i say nice to meet you if i were russian,translate,translate
+12,what is the right way to say excuse me in spanish,translate,translate
+13,how do i say i'm sorry in chinese,translate,translate
+14,how would i say thank you if i were mexican,translate,translate
+15,how would i say what is your name if i were french,translate,translate
+16,how would i say i must be going now if i were german,translate,translate
+17,how do i say bathroom in italian,translate,translate
+18,how might i say hello if i were scottish,translate,translate
+19,i must know how to say thank you in german,translate,translate
+20,how would i say i love you if i were german,translate,translate
+21,how would i say how are you today if i were mexican,translate,translate
+22,how would i say where is the bathroom if i were korean,translate,translate
+23,how would i say i need directions if i were french,translate,translate
+24,how would i say i am lost if i were japanese,translate,translate
+25,english to spanish for dog,translate,change_language
+26,what is dog in spanish,translate,translate
+27,how do you say dog in spanish,translate,translate
+28,dog in spanish,translate,change_language
+29,what's the spanish word for dog,translate,translate
+30,can you please provide me with assistance in moving money from one account to another,transfer,transfer
+31,i would like help moving money between accounts,transfer,transfer
+32,can you assist me in moving money from one account to another,transfer,transfer
+33,i would like help moving money from one account to another,transfer,transfer
+34,i would like assistance moving money from one account to another,transfer,transfer
+35,can i move some money around,transfer,transfer
+36,can i make a transfer between my accounts,transfer,transfer
+37,i need to make a transfer of my money,transfer,transfer
+38,can i move some money between my two accounts,transfer,transfer
+39,i would like to distribute some money between my accounts,transfer,balance
+40,i would like to transfer $100 from my checking to saving account,transfer,transfer
+41,help me transfer $100 from my checking to saving account,transfer,transfer
+42,transfer $100 from my checking to saving account,transfer,transfer
+43,can you please help me move $100 from my checking to saving account,transfer,transfer
+44,please move $100 from my checking to saving account,transfer,transfer
+45,"transfer seventeen dollars from rbs to woodforest account, please",transfer,transfer
+46,"send twelve dollars between cabelas and bank of london accounts, please",transfer,transfer
+47,"transfer ninety dollars between glacier checking and farmers accounts, please",transfer,transfer
+48,transfer seventy dollars between national and citizens accounts,transfer,transfer
+49,transfer four and sixty seven dollars from bank of oklahoma checking to security bank account,transfer,transfer
+50,how much money can i transfer today,transfer,transfer
+51,add funds to the retirement account from the pnc account only,transfer,transfer
+52,would you move 100 dollars from the checking and put it into savings,transfer,transfer
+53,repeat what the weather will be like,transfer,weather
+54,i would like to put 100 dollars from the checking into the savings account now,transfer,transfer
+55,please transfer $5000 to money market from checking account,transfer,transfer
+56,i need $360 transfered from savings to checking account,transfer,transfer
+57,make an immediate transfer of ten thousand from money market to checking,transfer,transfer
+58,i'd like to transfer $400 from household to savings account,transfer,transfer
+59,transer $800 from my checking to savings account,transfer,transfer
+60,set a 4 minute timer,timer,timer
+61,set a 2 minute timer,timer,timer
+62,set a 3 minute timer,timer,timer
+63,set a 5 minute timer,timer,timer
+64,set a 1 minute timer,timer,timer
+65,who set up the numbers for it,timer,routing
+66,start the timer,timer,timer
+67,start a timer please,timer,timer
+68,i need to start a timer,timer,timer
+69,i need a timer to be set,timer,timer
+70,could you set a timer,timer,timer
+71,set a timer,timer,timer
+72,i need to have a timer for 10 minutes,timer,timer
+73,make a 10 minute timer,timer,timer
+74,give me a 10 minute timer,timer,timer
+75,will you create a timer for me,timer,timer
+76,please begin a timer,timer,timer
+77,is it possible to set a timer,timer,timer
+78,i want a timer set for 10 minutes,timer,timer
+79,set a timer for 10 minutes,timer,timer
+80,can i get a timer set,timer,timer
+81,i need to use a timer,timer,timer
+82,set a timer to go off in 1 hour,timer,timer
+83,i need a timer for 45 minutes,timer,timer
+84,in 15 minutes the timer should go off,timer,timer
+85,start the timer now,timer,timer
+86,set a timer for 30 minutes,timer,timer
+87,set a timer for 5 minutes from now,timer,timer
+88,let me know when it's been 5 minutes,timer,timer
+89,can you set the timer to 20 minutes,timer,timer
+90,define antebellum,definition,definition
+91,define discontent,definition,definition
+92,what is the meaning of incandescent,definition,definition
+93,what does confrontation mean,definition,definition
+94,what does serendipity mean,definition,definition
+95,what's the definition of luminescent,definition,definition
+96,what is the definiton of auspicious,definition,definition
+97,what does circuitous mean,definition,definition
+98,what's the definition of unencumbered,definition,definition
+99,what does adulation mean,definition,definition
+100,what does assiduous mean,definition,definition
+101,what does amicable mean,definition,definition
+102,what's the definition of remunerative,definition,definition
+103,what does anachronistic mean,definition,definition
+104,what's the definition of idiosyncratic,definition,definition
+105,what does yolo mean,definition,definition
+106,can you tell me the meaning of fluctuate,definition,definition
+107,what does the word polynomial mean,definition,definition
+108,what does ferrari mean,definition,definition
+109,what is the meaning of the word girn,definition,definition
+110,what does mature mean,definition,definition
+111,i'd like to know what bitcoin means,definition,definition
+112,"i heard some woman say she was going to yerd me, what's that mean",definition,translate
+113,can you tell me what obsolescence means,definition,definition
+114,please explain the word catastrophic to me,definition,spelling
+115,what's the meaning of naff,definition,definition
+116,can you tell me what dendrofilous means,definition,definition
+117,what does peer-to-peer actually mean,definition,definition
+118,define epicurean,definition,definition
+119,what does epicurean mean,definition,definition
+120,would you let me know what the meaning is life is,meaning_of_life,meaning_of_life
+121,would you let me know what is the point of life,meaning_of_life,meaning_of_life
+122,"right now, i need to know the meaning of life",meaning_of_life,meaning_of_life
+123,define the meaning of life for me,meaning_of_life,meaning_of_life
+124,i want to know the meaning of life,meaning_of_life,meaning_of_life
+125,would you explain the meaning of life,meaning_of_life,meaning_of_life
+126,i need you to tell me the meaning of life,meaning_of_life,meaning_of_life
+127,i need to know what the meaning of life is now,meaning_of_life,meaning_of_life
+128,tell me what the meaning of life is,meaning_of_life,meaning_of_life
+129,i need to know what the point of life is,meaning_of_life,meaning_of_life
+130,let me know what the point of life is,meaning_of_life,meaning_of_life
+131,would you provide me with what the point of life is,meaning_of_life,meaning_of_life
+132,tell me what the point of life is,meaning_of_life,meaning_of_life
+133,what is the reason humans even exist,meaning_of_life,meaning_of_life
+134,do you think our lives have purpose or meaning,meaning_of_life,meaning_of_life
+135,can you tell me about the meaning of life,meaning_of_life,meaning_of_life
+136,can you tell me what the meaning of life is,meaning_of_life,meaning_of_life
+137,what do you know about the meaning of life,meaning_of_life,meaning_of_life
+138,i would like information on the meaning of life,meaning_of_life,meaning_of_life
+139,what information can you give me on the meaning of life,meaning_of_life,meaning_of_life
+140,what is the core meaning of life,meaning_of_life,meaning_of_life
+141,what do you know about lifes meaning,meaning_of_life,meaning_of_life
+142,is there any consensun regarding lifes true meaning,meaning_of_life,meaning_of_life
+143,is there a reason beyond biology about why humans are alive,meaning_of_life,account_blocked
+144,do you think being alive has any meaning,meaning_of_life,meaning_of_life
+145,is there meaning to life,meaning_of_life,meaning_of_life
+146,is there meaning in life,meaning_of_life,meaning_of_life
+147,what is the answer to life,meaning_of_life,meaning_of_life
+148,what's the answer to it all,meaning_of_life,calculator
+149,what's life mean to you,meaning_of_life,meaning_of_life
+150,i would like to change my insurance policy,insurance_change,insurance_change
+151,can i edit my insurance policy,insurance_change,insurance_change
+152,i am interested in a new insurance plan,insurance_change,insurance_change
+153,i really would like to get a new insurance plan,insurance_change,insurance_change
+154,i am in the market for a new insurance plan,insurance_change,insurance_change
+155,is there a way to alter my insurance policy,insurance_change,insurance_change
+156,how can i change to new insurance plan,insurance_change,insurance_change
+157,help me find a new insurance plan,insurance_change,insurance_change
+158,can i update my insurance policy,insurance_change,insurance_change
+159,who do i contact about updating my insurance,insurance_change,insurance_change
+160,can you help me change my insurance policy,insurance_change,insurance_change
+161,"i need to change my insurance policy, do you know how",insurance_change,insurance_change
+162,what are the steps to change my insurance policy,insurance_change,insurance_change
+163,do you know how i can change my insurance policy,insurance_change,insurance_change
+164,how to i change the policy on my insurace,insurance_change,insurance_change
+165,what do i need to do to get new insurance,insurance_change,insurance_change
+166,do you know how i get new insurance,insurance_change,insurance_change
+167,what is the protocol for getting new insurance,insurance_change,insurance_change
+168,let me know the process for new insurance,insurance_change,insurance_change
+169,i want to sign up for a new allstate insurance plan,insurance_change,insurance_change
+170,i need to sign up for a new allstate plan,insurance_change,insurance_change
+171,what is the procedure for signing up for a new allstate plan,insurance_change,insurance
+172,how do i sign up for a new allstatedplan,insurance_change,new_card
+173,i want to change to a new allstate insurance plan,insurance_change,insurance_change
+174,i want a new insurance plan,insurance_change,insurance_change
+175,what if i want to switch insurance plans,insurance_change,insurance_change
+176,is there a way to get a new insurance plan,insurance_change,insurance_change
+177,i want to switch to a new insurance plan,insurance_change,insurance_change
+178,how do i switch insurance plans,insurance_change,insurance_change
+179,phone number to state farm to change insurance,insurance_change,insurance_change
+180,"can you help me find my phone, please",find_phone,find_phone
+181,could you help me locate my phone,find_phone,find_phone
+182,can you help me locate my phone,find_phone,find_phone
+183,"could you help me locate my phone, please",find_phone,find_phone
+184,"can you help me locate my phone, please",find_phone,find_phone
+185,"i cannot locate my phone, can you help me",find_phone,find_phone
+186,i need help locating my phone,find_phone,find_phone
+187,can you assist me with finding my phone,find_phone,find_phone
+188,i lost my phone can you help me,find_phone,find_phone
+189,where the bleep did i put my bleeping phone,find_phone,find_phone
+190,is my phone somewhere around here,find_phone,find_phone
+191,"help, i've lost my cellphone!",find_phone,find_phone
+192,i seem to have lost my phone,find_phone,find_phone
+193,do you know my phone's location,find_phone,find_phone
+194,can you find my phone,find_phone,find_phone
+195,where's my phone at,find_phone,find_phone
+196,what's my phone's location,find_phone,find_phone
+197,can you help me hunt for my missing cellphone,find_phone,find_phone
+198,locate my cellphone in this room,find_phone,find_phone
+199,where did i last put my phone,find_phone,find_phone
+200,find my cellphone for me!,find_phone,find_phone
+201,where did i place my phone,find_phone,find_phone
+202,where's my phone,find_phone,find_phone
+203,my phone isn't where i left it,find_phone,find_phone
+204,i think i've misplaced my phone,find_phone,find_phone
+205,i've lost my phone somewhere,find_phone,find_phone
+206,i think i lost my phone,find_phone,find_phone
+207,would you know where to find my phone,find_phone,find_phone
+208,please assist me in looking for my phone,find_phone,find_phone
+209,look for my phone with me,find_phone,find_phone
+210,is there a travel alert in spain,travel_alert,travel_alert
+211,travel alert in cuba,travel_alert,travel_alert
+212,alerts for travel in colombia,travel_alert,travel_alert
+213,are there travel alerts in mexico,travel_alert,travel_alert
+214,mexico travel alerts,travel_alert,travel_alert
+215,have there been any travel alerts for the us,travel_alert,travel_alert
+216,are there any travel advisories for the us,travel_alert,travel_alert
+217,what are the travel alerts for the us,travel_alert,travel_alert
+218,are there travel alerts for the us,travel_alert,travel_alert
+219,what travel alerts are in effect for the us,travel_alert,travel_alert
+220,i want to know if i will be safe if i travel to europe,travel_alert,travel_alert
+221,would i be safe if i traveled to japan,travel_alert,travel_alert
+222,is it safe to go to north korea,travel_alert,international_visa
+223,will i be safe going to south america,travel_alert,travel_alert
+224,am i safe to go to africa,travel_alert,vaccines
+225,which countries have travel alerts,travel_alert,travel_alert
+226,is it safe in italy,travel_alert,international_visa
+227,what are the travel conditions for haiti,travel_alert,weather
+228,are there any travel bulletins about haiti,travel_alert,vaccines
+229,note any travel alerts for haiti,travel_alert,travel_alert
+230,find travel alerts for haiti,travel_alert,travel_alert
+231,does the state department say anything about traveling to haiti,travel_alert,travel_suggestion
+232,is there a travel alert for france,travel_alert,travel_alert
+233,is it safe for me to go to turkey,travel_alert,vaccines
+234,is it safe to go to serbia,travel_alert,yes
+235,safety concerns for malaysia,travel_alert,
+236,is it safe for me to visit malawi,travel_alert,travel_alert
+237,is travel to monterrey safe now,travel_alert,travel_alert
+238,is it safe for people to travel to pakistan,travel_alert,book_hotel
+239,can people safely travel to cambodia,travel_alert,plug_type
+240,please help me set up a vacation request,pto_request,pto_request
+241,how does one go about putting in a vacation request,pto_request,pto_request
+242,how do i put in a vacation request,pto_request,pto_request
+243,walk me through on how to make a vacation request,pto_request,pto_request
+244,please put in a vacation request,pto_request,pto_request
+245,how is a vacation request done,pto_request,pto_request_status
+246,how is a vacation request made,pto_request,pto_request
+247,what is the process of making a vacation request,pto_request,pto_request
+248,how would one make a vacation request,pto_request,pto_request
+249,can i put in a pto request for september 1st to september 8th,pto_request,pto_request
+250,"if i want to make a vacation request, how do i do it",pto_request,pto_request
+251,can i put in a pto request for august 1st to august 10th,pto_request,pto_request
+252,can i put in a pto request for january 4th to january 9th,pto_request,pto_request
+253,can i put in a pto request for december 3rd to december 10th,pto_request,pto_request
+254,can i put in a pto request for december 25th to january 1st,pto_request,pto_request
+255,can i take pto from the end of the month to the 5th of the next month,pto_request,calendar_update
+256,can you help me plan a vacation,pto_request,pto_request
+257,it it possible to take pto from the 8th to the 11th,pto_request,travel_notification
+258,is it ok if i use some of my pto on may 24th to may 29th,pto_request,pto_request
+259,what do i do to set up a vacation,pto_request,pto_request
+260,i need to use pto on october 5th to october 10th,pto_request,travel_notification
+261,how do i plan a vacation,pto_request,insurance_change
+262,can i put in a pto request for monday to wednesday,pto_request,pto_request
+263,can i purchase a vacation using this,pto_request,order
+264,how do i get help with a vacation itinerary,pto_request,pto_request
+265,how do i request a vacation,pto_request,pto_request
+266,i'd like to request a vacation,pto_request,pto_request
+267,i need to request a vacation,pto_request,pto_request
+268,vacation request information,pto_request,pto_request_status
+269,vacation request please,pto_request,pto_request
+270,how can i increase my credit score,improve_credit_score,improve_credit_score
+271,how can i raise my credit score,improve_credit_score,improve_credit_score
+272,how can i contribute to my credit score,improve_credit_score,improve_credit_score
+273,how is it possible to get a better credit score,improve_credit_score,credit_score
+274,how can i up my credit score,improve_credit_score,improve_credit_score
+275,can you explain to me how i might boost my credit score,improve_credit_score,improve_credit_score
+276,my credit score stinks but i don't know how to improve it,improve_credit_score,improve_credit_score
+277,what preventative measures can i take to avoid a low credit score,improve_credit_score,improve_credit_score
+278,how can i keep my credit score from falling,improve_credit_score,improve_credit_score
+279,give me some ideas for boosting my credit score,improve_credit_score,credit_score
+280,how can i prevent my credit score from dropping,improve_credit_score,improve_credit_score
+281,what steps can i take to build my credit score,improve_credit_score,improve_credit_score
+282,give me some tips on building up my credit score,improve_credit_score,improve_credit_score
+283,how can i rehabilitate my poor credit score,improve_credit_score,improve_credit_score
+284,give me some ideas of how to avoid my credit score lowering,improve_credit_score,improve_credit_score
+285,give me tips on improving my credit score,improve_credit_score,improve_credit_score
+286,what steps should i take if i want to ensure my credit score doesn't drop,improve_credit_score,improve_credit_score
+287,can you tell me some strategies for raising my credit score,improve_credit_score,improve_credit_score
+288,i want to know how i can build up a good credit score,improve_credit_score,improve_credit_score
+289,"""what's the method to improve credit score",improve_credit_score,improve_credit_score
+290,"""which is the best way to improve the credit score",improve_credit_score,improve_credit_score
+291,"""which could be improve the credit score",improve_credit_score,improve_credit_score
+292,"""when the credit score improve",improve_credit_score,improve_credit_score
+293,"""where is improve the credit score",improve_credit_score,improve_credit_score
+294,it is damaging to my credit score if i miss one credit card payment,improve_credit_score,improve_credit_score
+295,i have a revolving store card and defaulted so will my fico score be affected,improve_credit_score,improve_credit_score
+296,will my fico score decrease if i increase my student loan debt,improve_credit_score,improve_credit_score
+297,if i lose my job will my credit score go down,improve_credit_score,improve_credit_score
+298,can i hurt my credit rating if i open several credit cards in a short time frame,improve_credit_score,improve_credit_score
+299,will only having five late payments really make my credit bad,improve_credit_score,improve_credit_score
+300,name unusual facts about the circus,fun_fact,fun_fact
+301,i need interesting baseball trivia from the nineteen eighties,fun_fact,fun_fact
+302,tell me a fun fact about cars,fun_fact,fun_fact
+303,give me a fun fact about kangaroo,fun_fact,fun_fact
+304,give me a fun fact about koala,fun_fact,fun_fact
+305,give me a fun fact about dolphin,fun_fact,fun_fact
+306,what is some trivia about frog,fun_fact,fun_fact
+307,tell me fun facts of today,fun_fact,fun_fact
+308,give me something interesting about stars,fun_fact,fun_fact
+309,what is some trivia question about coffee,fun_fact,fun_fact
+310,tell me some trivia about sweat,fun_fact,fun_fact
+311,tell me some trivia about dolphin,fun_fact,fun_fact
+312,what is some trivia about the weather,fun_fact,fun_fact
+313,give me a fun fact about komodo dragon,fun_fact,fun_fact
+314,give me a amusing fact about wolf,fun_fact,fun_fact
+315,what is the interesting trivia about human bodies,fun_fact,fun_fact
+316,i want to learn something about apples,fun_fact,fun_fact
+317,tell me today's fun fact,fun_fact,fun_fact
+318,i want today's fun fact please,fun_fact,fun_fact
+319,what is today's fun fact,fun_fact,fun_fact
+320,today's fun fact,fun_fact,fun_fact
+321,i want a fun fact about london,fun_fact,fun_fact
+322,tell me something interesting about bees,fun_fact,fun_fact
+323,i would you like to learn something interesting about bees,fun_fact,fun_fact
+324,i want to hear cool bee facts,fun_fact,fun_fact
+325,what's something interesting about bees,fun_fact,fun_fact
+326,i wanna hear something cool about bees,fun_fact,tell_joke
+327,tell me fun facts on science topics,fun_fact,fun_fact
+328,tell me fun science facts,fun_fact,fun_fact
+329,i want to know fun facts about koala bears,fun_fact,fun_fact
+330,please speak in tagalog,change_language,change_accent
+331,speak in german,change_language,change_language
+332,speak to me in dutch,change_language,
+333,speak in french please,change_language,change_language
+334,speak spanish please,change_language,change_language
+335,i am not understanding the language you are responding in; switch it for me,change_language,change_language
+336,i can't understand the language you are responding in; i need you to switch it,change_language,change_language
+337,i need you to switch the language you are responding as i don't understand,change_language,change_language
+338,i don't understand your language; switch the language,change_language,change_language
+339,i need you to switch the language you are responding in,change_language,change_language
+340,i'd like to speak in portuguese,change_language,translate
+341,can we speak in german,change_language,change_language
+342,i want to use spanish with you,change_language,change_language
+343,please let's speak in spanish,change_language,change_language
+344,please can we speak in dutch,change_language,change_language
+345,can you make the default language swedish,change_language,change_language
+346,is it possible to talk to you in mandarin,change_language,change_language
+347,would you understand me if i speak to you in navajo,change_language,
+348,i'd like the language to be in spanish,change_language,change_language
+349,i'd like to use you using russian,change_language,international_fees
+350,can i speak spanish to you hombre,change_language,change_language
+351,i want to start talking to you in swedish,change_language,
+352,can i get you to change your language setting to russian,change_language,change_language
+353,please make your language setting norwegian,change_language,change_language
+354,i am going to speak english now,change_language,change_language
+355,do you speak english,change_language,change_language
+356,i want to talk english,change_language,change_language
+357,we have to speak in english,change_language,change_language
+358,speak in dutch,change_language,change_language
+359,i want to speak to you in swiss german,change_language,change_language
+360,how long until my paycheck shows up,payday,payday
+361,can you tell me the date of my last check,payday,last_maintenance
+362,what was the date when i last go paid,payday,payday
+363,what's the date on my last pay stub,payday,payday
+364,when can i expect my paycheck,payday,payday
+365,when is the next time i'll receive a paycheck,payday,payday
+366,when did i last collect my salary,payday,income
+367,when do i next get paid,payday,payday
+368,when is my paycheck arriving,payday,payday
+369,what day is payday,payday,payday
+370,do you know when my next check is coming,payday,next_holiday
+371,when do i get my next paycheck,payday,payday
+372,when's pay day for me,payday,next_holiday
+373,i need to know when i get paid next,payday,payday
+374,when's my next pay day,payday,next_holiday
+375,what day's my pay coming next,payday,next_holiday
+376,when do i get paid for my work,payday,payday
+377,look up when my payday is supposed to be,payday,payday
+378,when can i expect to be paid,payday,payday
+379,look up the date for my next payday,payday,payday
+380,what day will i earn my payment from work,payday,income
+381,find out when my next upcoming payday will be,payday,payday
+382,when is the next payday i can look forward to,payday,payday
+383,what day can i expect to receive payment on,payday,min_payment
+384,when will my next paycheck be coming,payday,payday
+385,when will my payment be deposited,payday,direct_deposit
+386,when do i get my next pay check,payday,payday
+387,is it payday,payday,payday
+388,do you know when i'll receive my next paycheck,payday,payday
+389,what date do i get paid,payday,payday
+390,how long does it take for a credit card to be reissued and mailed to me,replacement_card_duration,replacement_card_duration
+391,can credit card companies expedite delivery of reissued credit cards,replacement_card_duration,damaged_card
+392,can you call the help desk line for my credit card company,replacement_card_duration,damaged_card
+393,how can i request a new credit card,replacement_card_duration,pto_request
+394,what's the phone number for my credit card company,replacement_card_duration,damaged_card
+395,i recently lost my credit card and need to know how long it takes to get a new one mailed to me,replacement_card_duration,replacement_card_duration
+396,i need to know the time it takes to get a new credit card sent to someone who lost theirs,replacement_card_duration,replacement_card_duration
+397,i lost my credit card recently  how long does take to get a new one in the mail,replacement_card_duration,replacement_card_duration
+398,what is amount of time it takes to get a new credit card i lost mine recently,replacement_card_duration,replacement_card_duration
+399,what is the time frame for sending a customer who lost their credit card a new one,replacement_card_duration,replacement_card_duration
+400,will i get getting my new card anytime soon,replacement_card_duration,replacement_card_duration
+401,what is the shipping status of my replacement card,replacement_card_duration,damaged_card
+402,how long until i get my replacement card,replacement_card_duration,replacement_card_duration
+403,when is my new card expected to arrive,replacement_card_duration,replacement_card_duration
+404,is my replacement card due to arrive in the mail today,replacement_card_duration,replacement_card_duration
+405,how long before my new card is mailed to me,replacement_card_duration,replacement_card_duration
+406,what is the shipping time for my card,replacement_card_duration,replacement_card_duration
+407,how much time before my new card is mailed to me,replacement_card_duration,replacement_card_duration
+408,how long does it take to get a new credit card,replacement_card_duration,replacement_card_duration
+409,time to order and receive a new credit card,replacement_card_duration,replacement_card_duration
+410,when will i received a replacement card,replacement_card_duration,damaged_card
+411,time to replace my credit card,replacement_card_duration,replacement_card_duration
+412,how long before the replacement card is mailed to me,replacement_card_duration,replacement_card_duration
+413,how much longer before the card is mailed to me,replacement_card_duration,replacement_card_duration
+414,how long will it takes to get a new credit card,replacement_card_duration,replacement_card_duration
+415,what is the shipping wait for my card,replacement_card_duration,replacement_card_duration
+416,when will the replaecment card arrive,replacement_card_duration,replacement_card_duration
+417,let me know the wait on a replacement credit card,replacement_card_duration,damaged_card
+418,let me know when the replacement card will arrive,replacement_card_duration,replacement_card_duration
+419,how soon can i expect a replacement card for my lost card to arrive,replacement_card_duration,replacement_card_duration
+420,i need you to tell me what time it is in new york now,time,time
+421,"what time is it in adelaide, australia right now",time,time
+422,is it after noon,time,how_busy
+423,is it six o clock yet,time,yes
+424,please give me the time in tanzania at this moment,time,time
+425,can you tell me the current time in jamaica,time,time
+426,"tell me the time in san francisco, please",time,time
+427,"what time is it right now in adelaide, australia",time,time
+428,what time is it in the eastern timezone,time,time
+429,what time is it in the mountain timezone,time,time
+430,what time is it in the greenwich timezone,time,time
+431,what time is it in the central timezone,time,time
+432,tell me what the time is in dallas,time,time
+433,what is the current time in dallas,time,time
+434,can you tell me what time it is in dallas,time,time
+435,what time is it in dallas,time,time
+436,tell time for another city: dallas,time,time
+437,what time is it right now at home,time,time
+438,what’s the time in new york,time,time
+439,tell me the time in california,time,time
+440,tell me the time in las vegas,time,time
+441,what is the time is central time zone,time,time
+442,what is the time in the usa,time,time
+443,what is the time in est,time,time
+444,whats the exact time,time,time
+445,what is the current time,time,time
+446,what's the current time,time,time
+447,what time is it in california,time,time
+448,please give me the time,time,time
+449,the time is what,time,time
+450,how is the status of my credit card application coming along,application_status,application_status
+451,what exactly is the status of my application for the credit card,application_status,application_status
+452,i need to know the status of my credit card application,application_status,application_status
+453,i would like to know the status of my credit card application,application_status,application_status
+454,let me know if my application for american saving bank,application_status,application_status
+455,check the status of my credit card application for me,application_status,application_status
+456,i want to know if my credit card application has been processed,application_status,application_status
+457,i want to know the status of my credit card application,application_status,application_status
+458,can you check if my credit card application has been processed,application_status,application_status
+459,i want to know how is my credit card application going,application_status,application_status
+460,can you let me know the status of my discover credit card application status,application_status,application_status
+461,can you tell me the status of my credit card application,application_status,application_status
+462,has my application for american express gone through yet,application_status,application_status
+463,let me know about the status of my credit card application,application_status,application_status
+464,can you please tell me about the status of my credit card application,application_status,application_status
+465,can you please let me know the status of my capital one application,application_status,application_status
+466,let me know the credit card application status,application_status,application_status
+467,has my application for discover card gone through yet,application_status,application_status
+468,can you tell me the credit card application status,application_status,application_status
+469,has my application for the hsbc card been approved yet,application_status,application_status
+470,please tell me if my application for the hsbc card has gone through yet,application_status,application_status
+471,how far has my application for the hsbc card gone till now,application_status,application_status
+472,what's the status on my application for the hsbc credit card,application_status,application_status
+473,how far has my application for the hsbc card proceeded till now,application_status,application_status
+474,did the application for my visa card finish,application_status,new_card
+475,has my mastercard application gone through the process,application_status,application_status
+476,has my mastercard application gone through yet,application_status,application_status
+477,has my application for my visa card gone through,application_status,application_status
+478,has my mastercard application been processed,application_status,application_status
+479,when will i know if my visa card application was approved,application_status,application_status
+480,what's the status of by delta flight,flight_status,flight_status
+481,what's the status of my virgin airlines flight,flight_status,flight_status
+482,what's the status of my jetblue flight,flight_status,flight_status
+483,what's the status of my southwest flight,flight_status,flight_status
+484,what's the status of my american airlines flight,flight_status,flight_status
+485,what's the news with my delta flight,flight_status,book_flight
+486,where is my delta flight,flight_status,book_flight
+487,what can you tell me about flight dl123,flight_status,flight_status
+488,where is flight dl123,flight_status,flight_status
+489,has flight dl123 left,flight_status,flight_status
+490,is flight dl123 going to arrive on time,flight_status,flight_status
+491,is my spirit flight running on time,flight_status,flight_status
+492,what's the status for my delta flight this afternoon,flight_status,flight_status
+493,give me the status on my united airlines flight,flight_status,book_flight
+494,what's up with my american airline flight will it be on time,flight_status,flight_status
+495,tell me what the status is for my aa flight,flight_status,flight_status
+496,i need for you to get me the status of my american airlines flight,flight_status,book_flight
+497,tell me the status of my american airlines flight,flight_status,flight_status
+498,i need to know the status of my american airlines flight,flight_status,flight_status
+499,would you let me know the status of my american airlines flight,flight_status,book_flight
+500,let me know the status of my american airlines flight,flight_status,flight_status
+501,has flight dl123 landed,flight_status,flight_status
+502,"is my flight, dl123 on time",flight_status,flight_status
+503,how far out is flight dl123,flight_status,flight_status
+504,is flight dl123 delayed,flight_status,flight_status
+505,what time is boarding scheduled,flight_status,flight_status
+506,when is boarding scheduled,flight_status,flight_status
+507,what time is boarding for my flight,flight_status,flight_status
+508,when is boarding scheduled for my flight,flight_status,flight_status
+509,when is my flight scheduled to board,flight_status,flight_status
+510,flip a coin for me and i call heads,flip_coin,flip_coin
+511,can you flip a coin for me,flip_coin,flip_coin
+512,give me the results of a coin flip,flip_coin,flip_coin
+513,please flip a coin for me,flip_coin,flip_coin
+514,please flip a coin for me ai,flip_coin,flip_coin
+515,flip a coin and tell me if it's heads,flip_coin,flip_coin
+516,"ai, flip a coin for me",flip_coin,flip_coin
+517,"ai, please flip a simulated coin",flip_coin,flip_coin
+518,let's flip a coin i choose heads,flip_coin,flip_coin
+519,can you please do a simulated coin flip for me ai,flip_coin,flip_coin
+520,flip a coin i choose heads,flip_coin,flip_coin
+521,flip a coin i'm calling heads,flip_coin,flip_coin
+522,can you do a coin flip for me ai,flip_coin,flip_coin
+523,i want you to flip a coin i choose heads,flip_coin,flip_coin
+524,just toss a coin,flip_coin,flip_coin
+525,just flip a coin,flip_coin,flip_coin
+526,throw a coin in the air,flip_coin,flip_coin
+527,flip a coin into the air,flip_coin,flip_coin
+528,"heads, coin flip",flip_coin,flip_coin
+529,"flip coin, heads!",flip_coin,flip_coin
+530,"flip a coin, i call heads!",flip_coin,flip_coin
+531,"coin flip, choose heads",flip_coin,flip_coin
+532,"please flip a coin, i choose heads!",flip_coin,flip_coin
+533,can you flip a coin i call heads,flip_coin,flip_coin
+534,"flip a coin, i'm heads",flip_coin,flip_coin
+535,"flip a coin, heads",flip_coin,flip_coin
+536,"flip us a coin, i call heads",flip_coin,flip_coin
+537,"flip a coin, you're tails and i'm heads",flip_coin,flip_coin
+538,give me a coin toss result,flip_coin,flip_coin
+539,"flip the coin, i choose heads",flip_coin,flip_coin
+540,bob is my name now,change_user_name,change_user_name
+541,please start calling me bob,change_user_name,change_ai_name
+542,change my name to bob,change_user_name,change_ai_name
+543,call me bob from now on,change_user_name,change_user_name
+544,don't call me bill anymore - call me bob,change_user_name,change_user_name
+545,i want you to call me bailey,change_user_name,change_user_name
+546,don't call me anything besides bailey,change_user_name,make_call
+547,refer to me as bailey,change_user_name,change_user_name
+548,"address me as ""bailey",change_user_name,change_user_name
+549,please call me bailey,change_user_name,change_user_name
+550,can you call me a different name,change_user_name,change_user_name
+551,could you call me a different name,change_user_name,change_user_name
+552,"could you call me a different name, please",change_user_name,change_user_name
+553,"could you call me by a different name, please",change_user_name,change_user_name
+554,"can you call me a different name, please",change_user_name,change_user_name
+555,"ai, my name is deb please use my name when you talk to me",change_user_name,change_user_name
+556,ai answer my questions with my name first which is deb,change_user_name,what_can_i_ask_you
+557,"ai, refer to me as deb when answering me",change_user_name,what_can_i_ask_you
+558,"ai, address me as deb when speaking to me",change_user_name,are_you_a_bot
+559,"ai, call me deb",change_user_name,make_call
+560,change my name please,change_user_name,change_user_name
+561,please go ahead and change my name,change_user_name,change_ai_name
+562,please switch my name,change_user_name,what_is_your_name
+563,change name for me,change_user_name,change_user_name
+564,my name is going to be sherlock,change_user_name,user_name
+565,start calling me jake from now on,change_user_name,change_ai_name
+566,call me shane,change_user_name,change_user_name
+567,i want you to call me sheldon,change_user_name,change_user_name
+568,i want to be called timothy,change_user_name,change_user_name
+569,call me mike from now on,change_user_name,make_call
+570,where are you coming from,where_are_you_from,next_holiday
+571,from where do you come,where_are_you_from,
+572,what place are you from,where_are_you_from,where_are_you_from
+573,where are you from originally,where_are_you_from,where_are_you_from
+574,"so, where do you come from",where_are_you_from,
+575,so where do you come from originally,where_are_you_from,where_are_you_from
+576,where do you call home,where_are_you_from,change_user_name
+577,what's your home country,where_are_you_from,where_are_you_from
+578,where did you live before you moved here,where_are_you_from,where_are_you_from
+579,are you from here or somewhere else originally,where_are_you_from,where_are_you_from
+580,tell me where you're from,where_are_you_from,where_are_you_from
+581,what area did you come from,where_are_you_from,where_are_you_from
+582,what is your origin,where_are_you_from,where_are_you_from
+583,where was it you were born,where_are_you_from,where_are_you_from
+584,the place you were born is,where_are_you_from,where_are_you_from
+585,what location were you born,where_are_you_from,where_are_you_from
+586,where were you put together,where_are_you_from,shopping_list_update
+587,where is your home planet,where_are_you_from,where_are_you_from
+588,where is your home town,where_are_you_from,where_are_you_from
+589,where were you thought of,where_are_you_from,where_are_you_from
+590,where do you originate from,where_are_you_from,where_are_you_from
+591,where have you come from,where_are_you_from,where_are_you_from
+592,where were you before,where_are_you_from,where_are_you_from
+593,where were you processed,where_are_you_from,application_status
+594,a hidden government facility,where_are_you_from,
+595,what region were you born,where_are_you_from,where_are_you_from
+596,from where did you originate,where_are_you_from,where_are_you_from
+597,are you from around here,where_are_you_from,meal_suggestion
+598,in what place are you originally from,where_are_you_from,where_are_you_from
+599,where did you grow up,where_are_you_from,how_old_are_you
+600,tack on a gallon of milk to the grocery list,shopping_list_update,shopping_list_update
+601,add laundry detergent to the list,shopping_list_update,shopping_list_update
+602,make sure to put eggs on the grocery list,shopping_list_update,shopping_list_update
+603,the list should also have 2 loaves of bread,shopping_list_update,shopping_list_update
+604,include asparagus on the list,shopping_list_update,todo_list_update
+605,remove milk and add eggs to my shopping list,shopping_list_update,shopping_list_update
+606,put milk on my shopping list,shopping_list_update,shopping_list_update
+607,i'd like to add pancake mix to my shopping list if it's not already there,shopping_list_update,shopping_list_update
+608,"if soda isn't on my shopping list, go ahead and add it for me",shopping_list_update,shopping_list_update
+609,add milk to my shopping list,shopping_list_update,shopping_list_update
+610,take toilet paper off my shopping list,shopping_list_update,shopping_list_update
+611,i need to add flour to my list for shopping if i haven't already,shopping_list_update,shopping_list_update
+612,take toilet paper off my shopping list and add paper towels,shopping_list_update,shopping_list_update
+613,i need hot dogs added to my shopping list please,shopping_list_update,shopping_list_update
+614,please put chips on my shopping list,shopping_list_update,shopping_list_update
+615,"is milk in my shopping list if not, add it",shopping_list_update,shopping_list_update
+616,can you add eggs to my shopping list,shopping_list_update,shopping_list_update
+617,add eggs to my shopping list if it's not already there,shopping_list_update,shopping_list_update
+618,i'd like to get soda while i'm out; add it to my shopping list,shopping_list_update,shopping_list_update
+619,"on my shopping list, remove eggs",shopping_list_update,shopping_list_update
+620,i need eggs; add them to my shopping list,shopping_list_update,shopping_list_update
+621,"take soda from my shopping list, and while you're at it add tea",shopping_list_update,shopping_list_update
+622,milk should be added to my shopping list,shopping_list_update,shopping_list_update
+623,"i don't need eggs anymore, but i do need milk",shopping_list_update,ingredient_substitution
+624,take paper towels off of my shopping list,shopping_list_update,shopping_list_update
+625,i need milk on my shopping list,shopping_list_update,shopping_list_update
+626,i don't need toilet paper anymore; take it off my shopping list,shopping_list_update,shopping_list_update
+627,"throw eggs on my shopping list, please",shopping_list_update,shopping_list_update
+628,i need water on my shopping list and beer off of it,shopping_list_update,shopping_list_update
+629,i need bananas on the list too,shopping_list_update,todo_list
+630,can you tell me what you can help with,what_can_i_ask_you,what_can_i_ask_you
+631,what things are you able to help me with,what_can_i_ask_you,what_can_i_ask_you
+632,i would like to know what you can help with,what_can_i_ask_you,what_can_i_ask_you
+633,what kind of things can you help with,what_can_i_ask_you,what_can_i_ask_you
+634,i want to know what type of things you can help me with,what_can_i_ask_you,what_can_i_ask_you
+635,please help me to know what type of things you can help me with,what_can_i_ask_you,what_can_i_ask_you
+636,can i know what type of things you can help me with,what_can_i_ask_you,what_can_i_ask_you
+637,i would like to know what type of things you can help me with,what_can_i_ask_you,what_can_i_ask_you
+638,i will be glad to know what type of things you can help me with,what_can_i_ask_you,what_can_i_ask_you
+639,what subjects do you like,what_can_i_ask_you,what_can_i_ask_you
+640,tell me what subjects you like,what_can_i_ask_you,what_can_i_ask_you
+641,please tell me what subjects you like,what_can_i_ask_you,what_can_i_ask_you
+642,so what subjects do you like,what_can_i_ask_you,what_can_i_ask_you
+643,what type of questions can i ask you,what_can_i_ask_you,what_can_i_ask_you
+644,what kinds of things are you familiar with,what_can_i_ask_you,what_can_i_ask_you
+645,what subjects are you experienced in,what_can_i_ask_you,what_can_i_ask_you
+646,what knowledge do you have on certain subjects,what_can_i_ask_you,maybe
+647,what kid of subjects do you excel in,what_can_i_ask_you,what_can_i_ask_you
+648,what subjects or areas are you familiar with,what_can_i_ask_you,what_can_i_ask_you
+649,which subjects are you the most experienced with,what_can_i_ask_you,what_can_i_ask_you
+650,tell me what you can do for me,what_can_i_ask_you,flip_coin
+651,what sorts of tasks can you do,what_can_i_ask_you,what_can_i_ask_you
+652,what can you do for me,what_can_i_ask_you,what_are_your_hobbies
+653,what can you do to make yourself useful,what_can_i_ask_you,pto_request
+654,what would you be able to do with me,what_can_i_ask_you,
+655,give me examples of what to ask you,what_can_i_ask_you,what_can_i_ask_you
+656,tell me what types of questions i can ask you,what_can_i_ask_you,what_can_i_ask_you
+657,what are you programmed to do for me,what_can_i_ask_you,who_made_you
+658,what things do you know how to do,what_can_i_ask_you,what_can_i_ask_you
+659,how can you help me,what_can_i_ask_you,what_can_i_ask_you
+660,undecided,maybe,
+661,i'm afraid i don't know how to answer that,maybe,maybe
+662,might,maybe,
+663,it might go either way,maybe,maybe
+664,both could be,maybe,maybe
+665,either or,maybe,maybe
+666,my answer would be maybe,maybe,maybe
+667,either one might be,maybe,maybe
+668,i can't say for certain either way,maybe,maybe
+669,it could go either way,maybe,maybe
+670,it's definitely a maybe for that,maybe,maybe
+671,i am not sure,maybe,maybe
+672,maybe it is,maybe,maybe
+673,i can't say,maybe,yes
+674,could be,maybe,maybe
+675,i am unable to say,maybe,translate
+676,i am not able to say,maybe,translate
+677,i am really not sure,maybe,maybe
+678,i do not know,maybe,time
+679,not sure,maybe,maybe
+680,not sure to be honest,maybe,maybe
+681,i think maybe,maybe,maybe
+682,"um, i'm not quite sure",maybe,no
+683,"um, i'm not totally sure",maybe,maybe
+684,"um, i'm not actually sure",maybe,maybe
+685,i'm not actually sure,maybe,maybe
+686,"um, i'm not sure",maybe,maybe
+687,that might be the case,maybe,maybe
+688,i'm not completely certain,maybe,no
+689,unsure,maybe,maybe
+690,help me change my oil,oil_change_how,oil_change_how
+691,what oil should i use for an oil change and how do i do it,oil_change_how,oil_change_how
+692,how do i do an oil change,oil_change_how,oil_change_how
+693,diy oil change,oil_change_how,oil_change_how
+694,how to do an oil change,oil_change_how,oil_change_how
+695,give me instructions for an oil change,oil_change_how,oil_change_how
+696,diy oil change and oil type,oil_change_how,oil_change_how
+697,oil type and do it yourself oil change information please,oil_change_how,oil_change_how
+698,i want to know how to change my oil,oil_change_how,oil_change_how
+699,can you tell me how to change my oil and what kind i use,oil_change_how,oil_change_how
+700,how to change oil and what oil type,oil_change_how,oil_change_how
+701,can you please instruct me on the proper way to change the oil in my car,oil_change_how,oil_change_how
+702,i need guidance on changing my oil,oil_change_how,oil_change_how
+703,i want a step by step explanation of how to change the oil in my car,oil_change_how,oil_change_how
+704,can you teach me how to change my oil,oil_change_how,oil_change_how
+705,can you teach me how to change my oil in my car,oil_change_how,oil_change_how
+706,help me figure out how to change my oil,oil_change_how,oil_change_how
+707,walk me through the steps involved in changing my oil,oil_change_how,oil_change_how
+708,give me step by step instructions for changing my oil,oil_change_how,oil_change_how
+709,i want to change the oil in my car but i do not know how to do it can you help,oil_change_how,oil_change_how
+710,put together a list of instructions for me on how to change the oil in my car,oil_change_how,oil_change_how
+711,"is it possible to change oil, if so how and what do i use",oil_change_how,oil_change_how
+712,what oil do i use when changing oil and how do i do it,oil_change_how,oil_change_how
+713,how would i replace my oil and what sort of oil should i use,oil_change_how,oil_change_how
+714,"can you change the oil, with what and how",oil_change_how,oil_change_how
+715,how could i replace my oil and what form of oil ought to i take advantage of,oil_change_how,oil_change_how
+716,can you tell me how to change my oil please,oil_change_how,oil_change_how
+717,how do i change my oil,oil_change_how,oil_change_how
+718,please let me know how to change the oil,oil_change_how,oil_change_how
+719,i need to know how to change oil in a car,oil_change_how,oil_change_how
+720,"i'd like to make a reservation at rooth chris, can you do that",restaurant_reservation,restaurant_reservation
+721,make a reservation for chik-fil-a at 3 o' clock please,restaurant_reservation,restaurant_reservation
+722,reserve a table for 3 at 7 for olive garden,restaurant_reservation,restaurant_reservation
+723,will you reserve a table at olive garden for 3 people at 7,restaurant_reservation,restaurant_reservation
+724,"at 7, i need a table for 3 at olive garden",restaurant_reservation,restaurant_reservation
+725,i need a table for 3 at olive garden for 7,restaurant_reservation,restaurant_reservation
+726,get a table for me at 7 for 3 people at olive garden,restaurant_reservation,restaurant_reservation
+727,reserve table for 5 at red robin under the name sara at 3,restaurant_reservation,restaurant_reservation
+728,reverse a table for 5 at burger king under the name sara at 6,restaurant_reservation,restaurant_reservation
+729,can you reserve a table for 6 at red robin under the name mavrick at 5 clock,restaurant_reservation,restaurant_reservation
+730,could you reserve table for 3 at carlos jr under the name adam at 4,restaurant_reservation,restaurant_reservation
+731,i want to reserve table for 5 at red robin under the name sara at 5,restaurant_reservation,restaurant_reservation
+732,i need a table for two at the havana at nine,restaurant_reservation,restaurant_reservation
+733,look for me a table at carl's cabin for twelve at eight,restaurant_reservation,restaurant_reservation
+734,i need a table at gemma for nine at two,restaurant_reservation,restaurant_reservation
+735,book me a table for three at rainforest cafe at seven,restaurant_reservation,restaurant_reservation
+736,get me a table for five at itta bena at three,restaurant_reservation,restaurant_reservation
+737,"5 people are going to be at tropicana by 8pm, reserve the table under martins name please",restaurant_reservation,restaurant_reservation
+738,use martins name to reserve a table at tropicana for 5 people at 8pm,restaurant_reservation,restaurant_reservation
+739,reserve a table at tropicana for 5 people under the name martins for 8pm,restaurant_reservation,restaurant_reservation
+740,martins needs a table for 5 people at tropicana at 8pm precisely,restaurant_reservation,restaurant_reservation
+741,the table should be reserved at 8pm at tropicana using martins name and it should be for 5 people,restaurant_reservation,restaurant_reservation
+742,are there any open reservations at outback tonight,restaurant_reservation,accept_reservations
+743,make a reservation for 2 tonight at 7:00 at outback steakhouse,restaurant_reservation,restaurant_reservation
+744,michael will reserve a table for two at 7:00pm for olive garden,restaurant_reservation,restaurant_reservation
+745,a table for two needs to be reserved for 7:00pm at olive garden using the name michael,restaurant_reservation,restaurant_reservation
+746,please reserve a table for two at olive garden at 7:00pm for michael,restaurant_reservation,restaurant_reservation
+747,get reservations at olive garden for two at 7:00pm under michael,restaurant_reservation,restaurant_reservation
+748,reservations for two need to be made using michael's name for 7:00pm at olive garden,restaurant_reservation,accept_reservations
+749,i want to eat at seven in the restaurant for two people,restaurant_reservation,how_busy
+750,what are my coffers at,balance,what_can_i_ask_you
+751,tell me the current balance of my bank accounts,balance,balance
+752,what's my current bank account total,balance,transfer
+753,how much do i have in my bank accounts,balance,balance
+754,what's the balance in my bank accounts,balance,balance
+755,what do i have in my bank accounts right now,balance,balance
+756,is there enough in my wells fargo account to buy some nike's,balance,freeze_account
+757,do i have enough in my wells fargo account to get some nike's,balance,order_checks
+758,do i have money in my wells fargo account for nike's,balance,balance
+759,"i want some nike's, is there enough in my wells fargo account",balance,freeze_account
+760,check my wells fargo account to see if i have enough for these nike's,balance,routing
+761,would you tell me my bank balance,balance,balance
+762,can you tell me my bank balance,balance,balance
+763,will you let me know my bank balance,balance,balance
+764,will you tell me my bank balance,balance,balance
+765,how much money is there in my bank accounts,balance,balance
+766,how much money do i have in my various bank accounts,balance,balance
+767,how much cash do i have in my various bank accounts,balance,balance
+768,how much cash do i have in my bank accounts,balance,balance
+769,how much dough do i have in my bank accounts,balance,balance
+770,whats the combined total of the money inside my bank accounts,balance,balance
+771,whats my bank accounts look like,balance,transfer
+772,how much moola is in my bank accounts,balance,balance
+773,what the numerical number inside my bank accounts,balance,routing
+774,how much does my bank account have,balance,transfer
+775,tell me the current account balance,balance,balance
+776,check my checking balance,balance,balance
+777,how much do i have left in my checking account,balance,balance
+778,what's my checking look like,balance,order_checks
+779,how much do i have in my savings account,balance,balance
+780,confirm my reservation for march 12 at 9:00 am,confirm_reservation,confirm_reservation
+781,please confirm that i have a reservation for march 1st at 7,confirm_reservation,confirm_reservation
+782,can you confirm that i have a reservation for february 21 at 6 o'clock,confirm_reservation,confirm_reservation
+783,verify my reservation for smith and wollensky at 6:45,confirm_reservation,confirm_reservation
+784,please confirm my reservation for bar les freres at 7,confirm_reservation,confirm_reservation
+785,tell me whether or not i have a reservation at gramercy tavern for tad,confirm_reservation,cancel_reservation
+786,can you confirm that i have a reservation for 2/20 at 6:00 pm,confirm_reservation,confirm_reservation
+787,please tell me if i still have a reservation at acero for susie,confirm_reservation,confirm_reservation
+788,please confirm my reservation at brio for theodore,confirm_reservation,confirm_reservation
+789,confirm my reservation for acero at 7,confirm_reservation,confirm_reservation
+790,please confirm that i have a reservation for 2/20 at 6:00 pm,confirm_reservation,confirm_reservation
+791,confirm that there is a reservation at bellagio for thomas,confirm_reservation,confirm_reservation
+792,can you confirm the reservation at fleming's for jane,confirm_reservation,confirm_reservation
+793,are there reservation for joe and will,confirm_reservation,cancel_reservation
+794,please verify my reservation for john at bardenay,confirm_reservation,confirm_reservation
+795,will you call and check on my reservation for john at bardenay,confirm_reservation,change_user_name
+796,is my reservation set for john at bardenay,confirm_reservation,cancel_reservation
+797,do we know if my reservation for john at bardenay was accepted,confirm_reservation,card_declined
+798,has my reservation for john at bardenay been confirmed,confirm_reservation,confirm_reservation
+799,"let's try and confirm my reservation for bubble bar under ""franklin",confirm_reservation,confirm_reservation
+800,i need to confirm my reservation for red lobster for frank,confirm_reservation,confirm_reservation
+801,"find my reservation for steve at crucere's and confirm it, please",confirm_reservation,confirm_reservation
+802,confirm the john reservation at applebee's,confirm_reservation,confirm_reservation
+803,i'd like to confirm the josh reservation at moe's,confirm_reservation,confirm_reservation
+804,i have a reservation for strip house for jennifer that i'd like to confirm,confirm_reservation,confirm_reservation
+805,please try to confirm my reservation for jim at barney's,confirm_reservation,confirm_reservation
+806,confirm my reservation for joe at hoss's,confirm_reservation,confirm_reservation
+807,i need to confirm the reservation for frank at chili's,confirm_reservation,confirm_reservation
+808,i'll be confirming my reservation for joseph at red lobster,confirm_reservation,confirm_reservation
+809,is there a reservation for mark at mimis,confirm_reservation,cancel_reservation
+810,can you freeze my bank account,freeze_account,freeze_account
+811,i want to freeze my bank account,freeze_account,freeze_account
+812,i want my account locked out,freeze_account,account_blocked
+813,stop all access to my account,freeze_account,freeze_account
+814,i need my account frozen!,freeze_account,freeze_account
+815,i need to lock my account right now!,freeze_account,freeze_account
+816,please force my account to freeze,freeze_account,freeze_account
+817,please stop my account,freeze_account,freeze_account
+818,please allow my account to freeze,freeze_account,freeze_account
+819,please put my account on hold,freeze_account,freeze_account
+820,freeze my account at the bank immediately,freeze_account,freeze_account
+821,would you be able to freeze my bank account,freeze_account,freeze_account
+822,my account at the bank needs to be frozen,freeze_account,freeze_account
+823,please block my discover account immediately,freeze_account,freeze_account
+824,please put a block on my citi account immediately,freeze_account,freeze_account
+825,block my american saving bank for now,freeze_account,transfer
+826,block my bank of america immdediately,freeze_account,freeze_account
+827,put a block on bank of amerian immediately,freeze_account,freeze_account
+828,my account needs to be frozen,freeze_account,freeze_account
+829,freeze my account for me,freeze_account,freeze_account
+830,put a freeze on my account,freeze_account,freeze_account
+831,could you please put a stop on my bank account,freeze_account,freeze_account
+832,i need to put a stop on my bank account,freeze_account,freeze_account
+833,are you able to put a stop on my bank account,freeze_account,freeze_account
+834,please put a stop on my bank account,freeze_account,freeze_account
+835,i am hoping you can put a stop on my bank account,freeze_account,freeze_account
+836,please put a freeze on my banking account,freeze_account,freeze_account
+837,i need my bank account frozen,freeze_account,freeze_account
+838,how do i freeze my bank account,freeze_account,freeze_account
+839,would you freeze my bank account,freeze_account,freeze_account
+840,"i heard i can transfer my 401k, but don't know how, do you",rollover_401k,rollover_401k
+841,"i need some help with transferring my 401k, can you help",rollover_401k,rollover_401k
+842,can you tell me how to transfer my 401k,rollover_401k,rollover_401k
+843,i want to transfer my 401k,rollover_401k,rollover_401k
+844,i wanna transfer my 401k,rollover_401k,rollover_401k
+845,i have to rollover my 401k,rollover_401k,rollover_401k
+846,i must rollover my 401k,rollover_401k,rollover_401k
+847,i want help to transfer my 401k,rollover_401k,rollover_401k
+848,help me to transfer my 401k,rollover_401k,rollover_401k
+849,i will rollover my 401k,rollover_401k,rollover_401k
+850,i need help to transfer my 401k,rollover_401k,rollover_401k
+851,i want to rollover my 401k,rollover_401k,rollover_401k
+852,how do i transfer my 401k to a new firm,rollover_401k,rollover_401k
+853,how do i roll over my 401k,rollover_401k,rollover_401k
+854,can i move my 401k to an ira,rollover_401k,rollover_401k
+855,how do i do a 401(k) rollover,rollover_401k,rollover_401k
+856,can 401ks be moved,rollover_401k,transfer
+857,can i transfer my 401k somewhere,rollover_401k,rollover_401k
+858,how do i switch 401k companies,rollover_401k,rollover_401k
+859,tell me how to roll over my 401k,rollover_401k,rollover_401k
+860,how can i transfer my 401k,rollover_401k,rollover_401k
+861,what are the steps to rollover my 401k,rollover_401k,rollover_401k
+862,"my 401k, can i roll it over",rollover_401k,rollover_401k
+863,"i want to rollover my 401k , can i",rollover_401k,rollover_401k
+864,help me rollover my 401k,rollover_401k,rollover_401k
+865,do you know the process to rollover my 401k,rollover_401k,rollover_401k
+866,tell me how to rollover my 401k,rollover_401k,rollover_401k
+867,my 401k needs to rollover and i need your help,rollover_401k,rollover_401k
+868,let me know how to rollover my 401k,rollover_401k,rollover_401k
+869,what do i have to do to transfer my 401k,rollover_401k,rollover_401k
+870,what company made this ai,who_made_you,who_made_you
+871,what is the name of the person who made you,who_made_you,who_made_you
+872,who is the person that brought you to life,who_made_you,meaning_of_life
+873,who is the one that made you,who_made_you,who_made_you
+874,who is your maker,who_made_you,schedule_maintenance
+875,which company made you,who_made_you,who_made_you
+876,who assembled you,who_made_you,who_do_you_work_for
+877,i wanna know who programmed you,who_made_you,who_made_you
+878,let me know who programmed you,who_made_you,who_made_you
+879,who made you,who_made_you,who_made_you
+880,i wanna know your maker,who_made_you,spelling
+881,who was your maker,who_made_you,who_made_you
+882,who is the one who programmed you,who_made_you,who_made_you
+883,i must know who programmed you,who_made_you,who_made_you
+884,tell me who your maker was,who_made_you,who_made_you
+885,what was the company that designed you,who_made_you,who_made_you
+886,do you know what company were you designed by,who_made_you,who_made_you
+887,let me know which company were you designed by,who_made_you,who_made_you
+888,what company were you designed by,who_made_you,who_made_you
+889,can you let me know what company were you designed by,who_made_you,who_made_you
+890,which company were you designed by,who_made_you,who_made_you
+891,tell me who made you please,who_made_you,who_made_you
+892,can you tell me who made you,who_made_you,who_made_you
+893,whats the name of the person who made you,who_made_you,who_made_you
+894,what company did the design for this,who_made_you,who_made_you
+895,what company did this design,who_made_you,who_made_you
+896,what company is responsible for this design,who_made_you,who_made_you
+897,what company designed this,who_made_you,who_made_you
+898,"for this design, what company did it",who_made_you,who_made_you
+899,name the person or group that programmed you,who_made_you,who_made_you
+900,which way do we go and how long will it take to get to the sears tower in chicago,distance,how_busy
+901,"so, does it take long to get to dodger stadium in anaheim",distance,distance
+902,how many minutes will it take to get to the empire state building in manhattan,distance,distance
+903,what's the mileage to get the the taj mahal in atlantic city,distance,mpg
+904,does it take long to get to yankee stadium in the bronx,distance,distance
+905,how much time is left until we get there,distance,pto_balance
+906,what's the time to destination going via bus to omaha,distance,distance
+907,how far from our destination are we,distance,distance
+908,how many minutes am i from texaco,distance,timer
+909,how long will i be on the bus if i rid it to seattle,distance,distance
+910,is it going to be much longer until i reach the bank,distance,distance
+911,am i close to arriving at the post office,distance,lost_luggage
+912,what's the estimated travel time to get to dc via bus,distance,distance
+913,when will i arrive at hy-vee,distance,lost_luggage
+914,how long does it take to get to el paso on a bus,distance,distance
+915,how long will it take me to get to walmart,distance,
+916,what's the average time to boston when riding a bus,distance,distance
+917,when will the bus get me to vermont,distance,directions
+918,how long will i be on the bus to new orleans,distance,distance
+919,how long is a bus ride to staples,distance,distance
+920,how long does it take to get downtown by bus,distance,distance
+921,what time will i get to the beach taking the bus,distance,distance
+922,how far am i from orlando,distance,distance
+923,give me an eta on when i will arrive at my destination,distance,flight_status
+924,tell me how much longer i will have to drive to reach the destination,distance,distance
+925,when will i get to orlando,distance,gas
+926,how much farther is orlando from my location,distance,current_location
+927,do i have a ways to go or am i close to getting to penn station,distance,directions
+928,please give me the approximate amount of time i will need to go from jfk international airport to penn station,distance,uber
+929,can you tell me about what time i should be arriving at the airport,distance,time
+930,how do you refer to me,user_name,user_name
+931,call my name,user_name,change_user_name
+932,what do i go by,user_name,change_user_name
+933,say my name,user_name,user_name
+934,what do you think my name is,user_name,user_name
+935,what do you think i'm called,user_name,change_ai_name
+936,what do you have for my name,user_name,user_name
+937,how do you address my name,user_name,what_is_your_name
+938,what's your designation,user_name,who_made_you
+939,what do you call me,user_name,change_user_name
+940,i want to hear my name,user_name,what_is_your_name
+941,my name,user_name,what_is_your_name
+942,what's my name,user_name,who_do_you_work_for
+943,what's my name on file,user_name,user_name
+944,what name do you have for me,user_name,user_name
+945,what did i tell you to call me,user_name,user_name
+946,please tell me the name that you have for me,user_name,user_name
+947,i need to know the name that you have for me,user_name,what_is_your_name
+948,can you tell me what name you have for me,user_name,user_name
+949,tell me what name you have for me,user_name,what_is_your_name
+950,i would like to know the name you have for me,user_name,what_is_your_name
+951,what is the name you have for me,user_name,user_name
+952,could you tell me my name,user_name,what_is_your_name
+953,do you have a name for me,user_name,user_name
+954,can you tell me my name for me,user_name,what_is_your_name
+955,what's the name you use for me,user_name,what_is_your_name
+956,you call me what,user_name,change_user_name
+957,what do you know me by,user_name,what_can_i_ask_you
+958,you know me by what right now,user_name,recipe
+959,what's the way you refer to me,user_name,user_name
+960,what's the timezone for britain,timezone,timezone
+961,i need the time zone for la,timezone,timezone
+962,i would like to know the timezone for britain,timezone,timezone
+963,i need la's time zone,timezone,timezone
+964,i need to know britain's timezone,timezone,timezone
+965,what timezone is britain in,timezone,timezone
+966,can you tell me britain's timezone,timezone,timezone
+967,what is the la's time zone,timezone,timezone
+968,can you tell me the time zone for la,timezone,timezone
+969,what is texas's timezone,timezone,timezone
+970,tell me the timezone for california,timezone,timezone
+971,what timezone would missouri be in,timezone,timezone
+972,what timezone do they use in arizona,timezone,timezone
+973,is new york in mountain timezone,timezone,timezone
+974,what is the timezone for la,timezone,timezone
+975,what is the timezone for new york,timezone,timezone
+976,what is the timezone for san francisco,timezone,timezone
+977,what is the timezone for paris,timezone,timezone
+978,what is the timezone for houston,timezone,timezone
+979,denver's timezone is what,timezone,timezone
+980,does denver reside in the eastern timezones,timezone,timezone
+981,which timezone is denver located,timezone,timezone
+982,"denver's timezone is a mystery, i wonder where its located",timezone,timezone
+983,in which time zone does denver reside,timezone,timezone
+984,what's the timezone in valencia,timezone,timezone
+985,what's the timezone now in hiram,timezone,timezone
+986,timezone in salt lake city,timezone,timezone
+987,timezone currently in mobile,timezone,timezone
+988,what time is it in phoenix,timezone,time
+989,can you give me the timezone for the country,timezone,timezone
+990,"i don't like this song, can skip it",next_song,next_song
+991,can we move onto the next song,next_song,next_song
+992,"skip this song, please",next_song,next_song
+993,can you swipe to the next song,next_song,next_song
+994,"next song, please!",next_song,next_song
+995,start the next song,next_song,next_song
+996,go to the next song and play it,next_song,next_song
+997,move forward one song,next_song,next_song
+998,play the next one,next_song,next_song
+999,skip to next track,next_song,next_song

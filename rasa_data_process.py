@@ -13,12 +13,6 @@ class rasa_data:
         self.data_file = data_file
 
 
-
-    def rasa_data_oov(self):
-        pass
-
-
-
     def rasa_data_process(self, df, write_file):
         '''
         Transfer the data to the rasa training data format.
@@ -74,10 +68,9 @@ class rasa_data:
             for i in phrase: phrase_txt += str(i)
             data.append(phrase_txt + '\n')
         
-        with open(write_file, 'w') as f:   
+        with open(write_file, 'w+') as f:   
             for i in data:
                 f.write(str(i))  
-
 
 
 
@@ -85,7 +78,9 @@ class rasa_data:
         #data_file = '/users/xinsun/Downloads/oos-eval-master/data/data_full.json'
         df = pd.read_json(self.data_file, typ='series')
         df_train = pd.DataFrame(df['train'], columns=['Phrase', 'Intent'])
+        df_oov_train = pd.DataFrame(df['oos_train'], columns=['Phrase', 'Intent'])
 
+        df_train = pd.concat([df_train, df_oov_train]).reset_index(drop=True)
 
         '''whether delete punctuation or stop words.'''
         if bool(dim1_stop): 
@@ -175,6 +170,7 @@ class rasa_data:
 
             if dim4_grammar == 'question': df_train['Phrase'] = df_train['Phrase_question']
             else: df_train['Phrase'] = df_train['Phrase_statement']
+
 
         
         '''using shortest dependency path of training phrases.'''
@@ -270,27 +266,48 @@ def rasa_data_loop(data_file, write_file, dimensions):
 
 
 
-
 if __name__=='__main__':
 
-    data_file = '/users/xinsun/Downloads/oos-eval-master/data/data_full.json'
-    write_file = '/users/xinsun/Desktop/'    #Downloads/oos-eval-master/data/data_full.json'
+    data_file = './data/data_full.json'
+    write_file = './rasa_result/sub_datasets_process_loop/'    #Downloads/oos-eval-master/data/data_full.json'
     
-    '''dimensions = [[True,True,True,True], [True,True,True,False], [True,True,False,True], [True,True,False,False], 
-                    [True,False,True,True], [True,False,True,False], [True,False,False,True], [True,False,False,False],
-                    [False,True,True,True], [False,True,True,False], [False,True,False,True], [False,True,False,False],
-                    [False,False,True,True], [False,False,True,False], [False,False,False,True], [False,False,False,False]] 
-                    # dim_1, dim_2, dim_3, dim_4'''
+    # get the test dataset
+    df = pd.read_json(data_file, typ='series')
+    df_test = pd.DataFrame(df['test'], columns=['Phrase', 'Intent'])
+    df_oov_test = pd.DataFrame(df['oos_test'], columns=['Phrase', 'Intent'])
+    df_test = pd.concat([df_test, df_oov_test]).reset_index(drop=True)
+    
+    write_test_file = './data/df_test.md'
+    rasa_test_data = rasa_data(data_file)
+    rasa_test_data.rasa_data_process(df_test[['Phrase', 'Intent']], write_test_file) 
 
-    dimensions = [[5, 20, 'question'], [5, 20, 'statement'], [5, 50, 'question'], [5, 50, 'statement'], [5, 100, 'question'], [5, 100, 'statement'], 
-                    [10, 20, 'question'], [10, 20, 'statement'], [10, 50, 'question'], [10, 50, 'statement'], [10, 100, 'question'], [10, 100, 'statement'],
-                    [15, 20, 'question'], [15, 20, 'statement'], [15, 50, 'question'], [15, 50, 'statement'], [15, 100, 'question'], [15, 100, 'statement']]
-    # dim2_length, dim3_reduce, dim4_grammar
 
-    for i in range(2):
-        for j in range(2):
-            file_name = str(int(dimensions[i][0])) + str(int(dimensions[i][1])) + str(int(dimensions[i][2])) + str(int(dimensions[i][3])) + '-' + str(properties[j][0]) + '-' + str(properties[j][1]) + '-' + str(properties[j][2])
-                    
-            subset_file = write_file + file_name + '.txt'
-            print(subset_file)
-            rasa_data_loop(data_file, subset_file, dimensions[i], properties[j])
+    '''
+    dimensions = [[True, False, False, False, False, False], [True, False, 20, 'statement', True, True], [True, False, 50, 'question', False, False], 
+            [True, 5, 50, 'statement', True, True], [True, 5, 100, False, False, True]] 
+    '''
+    dim1_punct = [True, False]
+    dim2_length = [False, 5, 15]
+    dim3_reduce = [False, 15, 50]
+    dim4_grammar = [False, 'statement', 'question']
+    dim5_sdp = [True, False]
+    dim6_keywords = [True, False]
+
+    dimensions = [] 
+    for d1 in dim1_punct:
+        for d2 in dim2_length:
+            for d3 in dim3_reduce:
+                for d4 in dim4_grammar:
+                    for d5 in dim5_sdp:
+                        for d6 in dim6_keywords:
+                            if (d2 == False and d5 == True and d6 == False) or (d2 == False and d5 == False and d6 == True) or (d5 == False and d6 == False):
+                                dimensions.append([d1, d2, d3, d4, d5, d6])
+    
+    
+    for i in range(len(dimensions)):
+        file_name = str(dimensions[i][0])+'-'+str(dimensions[i][1])+'-'+str(dimensions[i][2])+'-'+str(dimensions[i][3])+'-'+str(dimensions[i][4])+'-'+str(dimensions[i][5])
+        
+        subset_file = write_file + file_name + '.md'
+        print(subset_file)
+
+        rasa_data_loop(data_file, subset_file, dimensions[i])

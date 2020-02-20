@@ -9,14 +9,8 @@ from rake_nltk import Rake
 
 class rasa_data:
 
-    def __init__(self, data_file, dim_1, dim_2, dim_3, dim_4, dim_5, dim_6):
+    def __init__(self, data_file):
         self.data_file = data_file
-        self.dim_1 = dim_1
-        self.dim_2 = dim_2
-        self.dim_3 = dim_3
-        self.dim_4 = dim_4
-        self.dim_5 = dim_5
-        self.dim_6 = dim_6
 
 
 
@@ -87,14 +81,14 @@ class rasa_data:
 
 
 
-    def rasa_sub_dataset(self, write_file, dim2_length, dim3_reduce, dim4_grammar):
+    def rasa_sub_dataset(self, write_file, dim1_stop, dim2_length, dim3_reduce, dim4_grammar, dim5_sdp, dim6_keywords):
         #data_file = '/users/xinsun/Downloads/oos-eval-master/data/data_full.json'
         df = pd.read_json(self.data_file, typ='series')
         df_train = pd.DataFrame(df['train'], columns=['Phrase', 'Intent'])
 
 
         '''whether delete punctuation or stop words.'''
-        if self.dim_1: 
+        if bool(dim1_stop): 
             '''
             text = df_train.Phrase.values
             regex = re.compile('[%s]' % re.escape(string.punctuation))
@@ -129,7 +123,7 @@ class rasa_data:
 
 
         '''control the length of training sentences.'''
-        if self.dim_2:
+        if bool(dim2_length):
             nlp = spacy.load('en')
             phrases = df_train['Phrase']
             tokens = nlp.pipe(phrases, batch_size=10000)
@@ -144,7 +138,7 @@ class rasa_data:
 
 
         '''control the number of training sentences for each intents.'''
-        if self.dim_3:
+        if bool(dim3_reduce):
             idx_range= [(i*100, i*100+99) for i in range(150)]
             idx = []
             for i in range(150):
@@ -161,7 +155,7 @@ class rasa_data:
 
 
         '''choose different patterns of training sentences.'''
-        if self.dim_4:
+        if bool(dim4_grammar):
             df_train = df_train[df_train.Phrase.isnull()==False].reset_index(drop=True)
             nlp = spacy.load('en')
             phrases = df_train['Phrase']
@@ -184,7 +178,7 @@ class rasa_data:
 
         
         '''using shortest dependency path of training phrases.'''
-        if self.dim_5:
+        if bool(dim5_sdp):
             df_train = df_train[df_train.Phrase.isnull()==False].reset_index(drop=True)
             
             text = df_train.Phrase.values
@@ -238,7 +232,7 @@ class rasa_data:
 
         
         '''just using keywords of each training phrases.'''
-        if self.dim_6:
+        if bool(dim6_keywords):
 
             df_train = df_train[df_train.Phrase.isnull()==False].reset_index(drop=True)
             
@@ -269,10 +263,10 @@ class rasa_data:
 
 
 
-def rasa_data_loop(data_file, write_file, dimensions, properties):
+def rasa_data_loop(data_file, write_file, dimensions):
 
-    rasa_dataset = rasa_data(data_file, dimensions[0], dimensions[1], dimensions[2], dimensions[3], dimensions[4], dimensions[5])
-    rasa_dataset.rasa_sub_dataset(write_file, properties[0], properties[1], properties[2])
+    rasa_dataset = rasa_data(data_file)
+    rasa_dataset.rasa_sub_dataset(write_file, dimensions[0], dimensions[1], dimensions[2], dimensions[3], dimensions[4], dimensions[5])
 
 
 
@@ -282,13 +276,13 @@ if __name__=='__main__':
     data_file = '/users/xinsun/Downloads/oos-eval-master/data/data_full.json'
     write_file = '/users/xinsun/Desktop/'    #Downloads/oos-eval-master/data/data_full.json'
     
-    dimensions = [[True,True,True,True], [True,True,True,False], [True,True,False,True], [True,True,False,False], 
+    '''dimensions = [[True,True,True,True], [True,True,True,False], [True,True,False,True], [True,True,False,False], 
                     [True,False,True,True], [True,False,True,False], [True,False,False,True], [True,False,False,False],
                     [False,True,True,True], [False,True,True,False], [False,True,False,True], [False,True,False,False],
                     [False,False,True,True], [False,False,True,False], [False,False,False,True], [False,False,False,False]] 
-                    # dim_1, dim_2, dim_3, dim_4
+                    # dim_1, dim_2, dim_3, dim_4'''
 
-    properties = [[5, 20, 'question'], [5, 20, 'statement'], [5, 50, 'question'], [5, 50, 'statement'], [5, 100, 'question'], [5, 100, 'statement'], 
+    dimensions = [[5, 20, 'question'], [5, 20, 'statement'], [5, 50, 'question'], [5, 50, 'statement'], [5, 100, 'question'], [5, 100, 'statement'], 
                     [10, 20, 'question'], [10, 20, 'statement'], [10, 50, 'question'], [10, 50, 'statement'], [10, 100, 'question'], [10, 100, 'statement'],
                     [15, 20, 'question'], [15, 20, 'statement'], [15, 50, 'question'], [15, 50, 'statement'], [15, 100, 'question'], [15, 100, 'statement']]
     # dim2_length, dim3_reduce, dim4_grammar
